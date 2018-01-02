@@ -1,0 +1,9 @@
+
+platform :ios, '8.0'
+
+target 'old_fasion' do
+pod 'RSKImageCropper'
+pod 'QBImagePickerController'
+end
+
+
