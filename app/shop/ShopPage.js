@@ -551,7 +551,7 @@ export default class ShopPage extends Component {
             return (
                 <View style={styles.container} key={i}>
                     <Image source={item.imageSource} style={{width:base.deviceWidth/2,height:base.deviceWidth/2}}/>
-                    <BlurView style={styles.textContainer} blurType='dark' blurAmount={8}>
+                    <BlurView style={styles.textContainer} blurType='dark' blurAmount={8}/>
                         <Text style={{color:'white',backgroundColor:'transparent'}}>{item.iteminfo}</Text>
                         <View style={{justifyContent:'space-between',alignItems:'center',flexDirection:'row',width:base.deviceWidth/2}}>
                             <Text style={{fontSize:13,color:'#e57373',marginLeft:20}}>{item.price}</Text>
@@ -562,7 +562,7 @@ export default class ShopPage extends Component {
                                 textStyle={{color:base.themeColor,fontSize:13}}
                             />
                         </View>
-                    </BlurView>
+                    {/* </BlurView> */}
                 </View>
             )
         })

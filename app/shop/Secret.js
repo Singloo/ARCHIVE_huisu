@@ -45,7 +45,7 @@ export default class Secret extends Component{
             >
                 <View style={{flex:1}}>
                     <Image source={require('../images/lover.jpg')} style={{width:base.deviceWidth,height:base.deviceHeight,resizeMode:'cover'}}/>
-                    <BlurView  style={{position:'absolute',top:0,width:base.deviceWidth,height:base.deviceHeight,alignItems:'center',justifyContent:'center'}} blurType='light' blurAmount={10}>
+                    <BlurView  style={{position:'absolute',top:0,width:base.deviceWidth,height:base.deviceHeight,alignItems:'center',justifyContent:'center'}} blurType='light' blurAmount={10}/>
                         <TouchableOpacity 
                             style={{position:'absolute',left:10,top:40,width:40,height:40,alignItems:'center',justifyContent:'center'}}
                             onPress={()=>this.props.closeModal()}
@@ -63,7 +63,7 @@ export default class Secret extends Component{
                             {"But if you send for me you know I'll come,\nAnd if you call for me you know I'll run\n... \n 你一直都知道的... \n 我想...这种情感也许是无关性别的吧\n 只是...想和你在一起就行"}
                         </Text>
 
-                    </BlurView>
+                    {/* </BlurView> */}
 
                 </View>
 

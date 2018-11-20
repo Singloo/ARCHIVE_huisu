@@ -39,7 +39,7 @@ export default class ChooseDateModal extends Component {
             visible={this.props.chooseDateVisible}
            >
            <TouchableHighlight style={{flex: 1}} onPress={()=>{this.props.closeModal()}}>
-           <BlurView style={styles.blur} blurType='xlight' blurAmount={10}>
+           <BlurView style={styles.blur} blurType='xlight' blurAmount={10}/>
             <View style={styles.container}>
                 <DatePicker
                     style={{width: base.deviceWidth,alignSelf:'center'}}
@@ -91,7 +91,7 @@ export default class ChooseDateModal extends Component {
                 />
                 </View>
             </View>
-           </BlurView>
+           {/* </BlurView> */}
            </TouchableHighlight>
 
            </Modal>

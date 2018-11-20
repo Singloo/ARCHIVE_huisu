@@ -43,13 +43,13 @@ export default class ProgressHUD extends Component {
             visible={this.props.isLoading}
             >
                 <View style={{alignItems:'center',justifyContent:'center',flex:1}}>
-                    <BlurView style={styles.blur} blurType='light' blurAmount={3}>
+                    <BlurView style={styles.blur} blurType='light' blurAmount={3}/>
                     <ActivityIndicator
                         size='large'
                         style={{alignSelf:'center'}}
                     />
 
-                    </BlurView>
+                
                 </View>
             </Modal>
         )

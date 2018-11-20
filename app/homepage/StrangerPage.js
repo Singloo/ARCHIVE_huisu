@@ -94,7 +94,7 @@ export default class StrangerPage extends Component{
         return(
             <View style={{width:base.deviceWidth,height:base.realSize(150)}}>
                 <Image source={{uri:owner.get('avatar')}} style={{width:base.deviceWidth,height:base.realSize(150)}}/>
-                <BlurView style={styles.blurView} blurType='dark'>
+                <BlurView style={styles.blurView} blurType='dark'/>
                     <Image source={{uri:owner.get('avatar')}} style={{width:base.realSize(50),height:base.realSize(50),borderRadius:base.realSize(25)}}/>
 
                     <View style={{justifyContent:'center',alignItems:'center',flexDirection:'row',marginTop:20}}>
@@ -104,7 +104,7 @@ export default class StrangerPage extends Component{
                         </View>
                         <Text style={{backgroundColor:'transparent',color:'white',textAlign:'left',marginLeft:base.realSize(20)}}>{owner.get('userCoin')}</Text>
                     </View>
-                </BlurView>
+                {/* </BlurView> */}
             </View>
         )
     }
